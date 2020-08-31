@@ -47,7 +47,7 @@ namespace FinalHolidayMailer
 
         private DispatcherTimer mailTimer = new DispatcherTimer();
         private static int y = 0;
-        private string mypwd = "August30!";
+        private string mypwd = "SorryCharlie";
         private string mypath = @"";
         private bool flashAttach = false;
         private bool fileAttached = false;
@@ -231,10 +231,10 @@ namespace FinalHolidayMailer
                 {
                     var client = new SmtpClient("smtp.gmail.com", 587)
                     {
-                        Credentials = new NetworkCredential("xavierianhurd@gmail.com", mypwd),
+                        Credentials = new NetworkCredential("youremail@gmail.com", mypwd),
                         EnableSsl = true
                     };
-                    MailMessage message = new MailMessage("xavierianhurd@gmail.com", sendTo, "Happy Holidays", "Happy Holidays from us to you");
+                    MailMessage message = new MailMessage("youremail@gmail.com", sendTo, "Happy Holidays", "Happy Holidays from us to you");
                     if (fileAttached == true)
                     {
                         Attachment attach = new Attachment(mypath);
@@ -284,10 +284,10 @@ namespace FinalHolidayMailer
                         {
                             var client = new SmtpClient("smtp.gmail.com", 587)
                             {
-                                Credentials = new NetworkCredential("xavierianhurd@gmail.com", mypwd),
+                                Credentials = new NetworkCredential("youremail@gmail.com", mypwd),
                                 EnableSsl = true
                             };
-                            MailMessage message = new MailMessage("xavierianhurd@gmail.com", sendTo, "Happy Holidays", "Happy Holidays from us to you");
+                            MailMessage message = new MailMessage("youremail@gmail.com", sendTo, "Happy Holidays", "Happy Holidays from us to you");
                         if (fileAttached == true)
                         {
                             Attachment attach = new Attachment(mypath);
@@ -346,10 +346,10 @@ namespace FinalHolidayMailer
             {
                 var client = new SmtpClient("smtp.gmail.com", 587)
                 {
-                    Credentials = new NetworkCredential("xavierianhurd@gmail.com", mypwd),
+                    Credentials = new NetworkCredential("youremail@gmail.com", mypwd),
                     EnableSsl = true
                 };
-                MailMessage message = new MailMessage("xavierianhurd@gmail.com", "vanillabean09@hotmail.com", "Happy Holidays", "Happy Holidays from us to you");
+                MailMessage message = new MailMessage("youremail@gmail.com", "anotheremail@hotmail.com", "Happy Holidays", "Happy Holidays from us to you");
                 if (fileAttached == true)
                 {
                     Attachment attach = new Attachment(mypath);
