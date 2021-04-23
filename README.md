@@ -14,5 +14,5 @@ How To Start this WPF App:
 <br>
 * The email will not work as its an old password. To use this you will need to change the variable "mypwd" and "mypath" ( which is the email you'd like to use as the sender.. )
 
-![](InitImgs/1.png)
+![](InitImgs/1.png width=50)
 
